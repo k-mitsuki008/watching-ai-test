@@ -1,0 +1,4 @@
+steps:
+  # ステップ1: メッセージを表示するだけのテスト
+  - name: 'bash'
+    args: ['echo', '🎉 GitHub push detected! Cloud Build is running!']
