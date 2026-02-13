@@ -1,4 +1,7 @@
 steps:
-  # ステップ1: メッセージを表示するだけのテスト
   - name: 'bash'
     args: ['echo', '🎉 GitHub push detected! Cloud Build is running!']
+
+# ここから下を追加してください！
+options:
+  logging: CLOUD_LOGGING_ONLY
