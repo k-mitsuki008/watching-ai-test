@@ -1,11 +1,11 @@
 steps:
   - name: 'hashicorp/terraform'
     args: ['init']
-    dir: 'terraform/enviroments/${_ENV}'
+    dir: 'infrastructure/enviroments/${_ENV}'
 
   - name: 'hashicorp/terraform'
     args: ['apply', '-auto-approve']
-    dir: 'terraform/enviroments/${_ENV}'
+    dir: 'infrastructure/enviroments/${_ENV}'
 
 options:
   logging: CLOUD_LOGGING_ONLY
