@@ -1,7 +1,16 @@
 steps:
-  - name: 'bash'
-    args: ['echo', '🎉 GitHub push detected! Cloud Build is running!']
+  # 1. Terraformの初期化
+  - name: 'hashicorp/terraform'
+    args: ['init']
+    dir: 'terraform'
 
-# ここから下を追加してください！
+  - name: 'hashicorp/terraform'
+    args: ['plan']
+    dir: 'terraform'
+
+  - name: 'hashicorp/terraform'
+    args: ['apply', '-auto-approve']
+    dir: 'terraform'
+
 options:
   logging: CLOUD_LOGGING_ONLY
