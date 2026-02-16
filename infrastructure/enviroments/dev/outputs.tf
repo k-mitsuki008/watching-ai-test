@@ -5,10 +5,10 @@ output "hosting_bucket_name" {
 
 output "vpc_id" {
   description = "VPCID"
-  value = google_compute_network.vpc.id
+  value = module.network.vpc_id
 }
 
 output "subnet_id" {
   description = "サブネットID"
-  value = google_compute_subnetwork.subnet.id
+  value = module.network.subnet_id
 }
