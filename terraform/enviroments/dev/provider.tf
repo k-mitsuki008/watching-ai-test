@@ -1,6 +1,6 @@
 # GCPへの接続設定
 provider "google" {
-  project = var.project
+  project = var.account
   region = var.region
 }
 
