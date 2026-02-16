@@ -1,4 +1,3 @@
-# resource "サービス名" "Terraform内の変数名"
 resource "google_storage_bucket" "hosting_bucket" {
   name          = "${var.project}-${var.phase}-hosting-bucket"
   location      = var.region

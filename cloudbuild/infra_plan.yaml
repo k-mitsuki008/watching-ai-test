@@ -7,9 +7,5 @@ steps:
     args: ['plan']
     dir: 'terraform/enviroments/${_ENV}'
 
-  - name: 'hashicorp/terraform'
-    args: ['apply', '-auto-approve']
-    dir: 'terraform/enviroments/${_ENV}'
-
 options:
   logging: CLOUD_LOGGING_ONLY
