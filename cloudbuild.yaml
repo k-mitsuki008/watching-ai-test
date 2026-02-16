@@ -2,15 +2,15 @@ steps:
   # 1. Terraformの初期化
   - name: 'hashicorp/terraform'
     args: ['init']
-    dir: 'terraform'
+    dir: 'terraform/enviroments/dev'
 
   - name: 'hashicorp/terraform'
     args: ['plan']
-    dir: 'terraform'
+    dir: 'terraform/enviroments/dev'
 
   - name: 'hashicorp/terraform'
     args: ['apply', '-auto-approve']
-    dir: 'terraform'
+    dir: 'terraform/enviroments/dev'
 
 options:
   logging: CLOUD_LOGGING_ONLY
