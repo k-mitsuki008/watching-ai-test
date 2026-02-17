@@ -1,6 +1,6 @@
 # GCPへの接続設定
 provider "google" {
-  project = var.account
+  project = "iret-ag-spectator-plan-ai"
   region = var.region
 }
 

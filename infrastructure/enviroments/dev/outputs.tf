@@ -5,10 +5,20 @@ output "hosting_bucket_name" {
 
 output "vpc_id" {
   description = "VPCID"
-  value = google_compute_network.vpc.id
+  value = module.network.vpc_id
 }
 
 output "subnet_id" {
   description = "サブネットID"
-  value = google_compute_subnetwork.subnet.id
+  value = module.network.subnet_id
 }
+
+# output "bigtable_instance_name" {
+#   description = "データベース名"
+#   value = module.database.bigtable_instance_name
+# }
+
+# output "bigtable_table_name" {
+#   description = "テーブル名"
+#   value = module.database.bigtable_table_name
+# }
