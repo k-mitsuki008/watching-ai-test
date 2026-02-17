@@ -10,11 +10,19 @@ module "network" {
   region = var.region
 }
 
+module "database" {
+  source  = "../../modules/database"
+
+  project = var.project
+  phase = var.phase
+  account = var.account
+  region = var.region
+  vpc_id  = module.network.vpc_id
+}
+
 module "storage" {
-  # フォルダの指定
   source = "../../modules/storage"
 
-  # 変数名の定義
   project = var.project
   phase = var.phase
   account = var.account
