@@ -13,5 +13,5 @@ resource "google_bigtable_instance" "db_instance" {
 
 resource "google_bigtable_table" "db_table" {
   name = "${var.project}-${var.phase}-db"
-  instance_name = google_bigtable_instance.instance.name
+  instance_name = google_bigtable_instance.db_instance.name
 }
