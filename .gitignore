@@ -1,0 +1,53 @@
+.DS_Store
+node_modules
+.env.development
+.env.production
+.env.staging
+.coverage
+htmlcov
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+backend/coverage
+backend/pytest_cache
+
+# venv Environments
+.venv
+venv/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# sam deploy
+.aws-sam
+backend/aws-sam
+
+*storybook.log
+storybook-static
+
+# terraform
+.terraform
+.terraform.lock.hcl
