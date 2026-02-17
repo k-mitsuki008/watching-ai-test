@@ -13,12 +13,12 @@ output "subnet_id" {
   value = module.network.subnet_id
 }
 
-# output "bigtable_instance_name" {
-#   description = "データベース名"
-#   value = module.database.bigtable_instance_name
-# }
+output "bigtable_instance_name" {
+  description = "データベース名"
+  value = module.database.bigtable_instance_name
+}
 
-# output "bigtable_table_name" {
-#   description = "テーブル名"
-#   value = module.database.bigtable_table_name
-# }
+output "bigtable_table_name" {
+  description = "テーブル名"
+  value = module.database.bigtable_table_name
+}
