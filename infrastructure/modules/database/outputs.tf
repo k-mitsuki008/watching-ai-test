@@ -1,7 +1,7 @@
-output "vpc_id" {
-  value = google_compute_network.vpc.id
+output "bigtable_instance_name" {
+  value = google_bigtable_instance.db_instance.name
 }
 
-output "subnet_id" {
-  value = google_compute_subnetwork.subnet.id
+output "bigtable_table_name" {
+  value = google_bigtable_table.db_table.name
 }
