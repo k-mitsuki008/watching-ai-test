@@ -1,3 +1,5 @@
+# 各モジュール(/modules/*)に渡すパラメータを定義する。
+
 variable "project" {
   description = "案件名"
   type = string

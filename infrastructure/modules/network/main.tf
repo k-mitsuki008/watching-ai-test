@@ -1,3 +1,5 @@
+# 環境固有の値(プロジェクト名やリージョン名など)は直接記述せず、variables.tf の変数（var.xxx）経由で受け取る。
+
 resource "google_compute_network" "vpc" {
   name = "${var.project}-${var.phase}-vpc"
   auto_create_subnetworks = false

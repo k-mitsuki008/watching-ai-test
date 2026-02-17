@@ -1,3 +1,5 @@
+# モジュール内で作成されてリソースの属性値を定義する。
+
 output "vpc_id" {
   value = google_compute_network.vpc.id
 }

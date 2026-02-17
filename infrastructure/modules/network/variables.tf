@@ -1,3 +1,5 @@
+# モジュール内で使用する変数を定義する。
+
 variable "project" {
   description = "案件名"
   type = string

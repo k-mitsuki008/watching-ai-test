@@ -1,3 +1,5 @@
+# モジュール内で使用する変数を定義する。
+
 variable "project" {
   description = "案件名"
   type = string
@@ -18,4 +20,5 @@ variable "region" {
   type = string
 }
 
+# 他モジュールから参照する値がある場合は、定義する。
 variable "vpc_id"  { type = string }

@@ -1,3 +1,5 @@
+# モジュール内で作成されてリソースの属性値を定義する。
+
 output "bigtable_instance_name" {
   value = google_bigtable_instance.db_instance.name
 }
