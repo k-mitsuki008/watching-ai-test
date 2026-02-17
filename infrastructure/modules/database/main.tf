@@ -1,7 +1,6 @@
 resource "google_bigtable_instance" "db_instance" {
   name = "${var.project}-${var.phase}-db"
   display_name = "Minimal DB for testing"
-  instance_type = "DEVELOPMENT"
   deletion_protection = false
 
   cluster {
