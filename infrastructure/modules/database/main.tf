@@ -5,7 +5,8 @@ resource "google_bigtable_instance" "db_instance" {
 
   cluster {
     cluster_id = "cluster-min"
-    zone = var.region
+    zone = "${var.region}-a"
+    num_nodes = 1
     storage_type = "HDD"
   }
 }
